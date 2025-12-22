@@ -25,12 +25,13 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({ status }) => {
 
   return (
     <span
-      className={`inline-flex items-center rounded-full px-[11px] py-[5px] text-[13px] font-normal leading-tight ${getStatusStyles(
-        status
-      )}`}
-    >
-      {status}
-    </span>
+  className={`inline-flex items-center rounded-md px-[7px] py-[6px] text-[13px] font-normal leading-tight ${getStatusStyles(
+    status
+  )}`}
+>
+  {status}
+</span>
+
   );
 };
 

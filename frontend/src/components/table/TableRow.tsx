@@ -27,21 +27,21 @@ const TableRow: React.FC<TableRowProps> = ({ application, isClickable = false, o
 
       {/* Role */}
       <td className="px-4 py-3.5">
-        <span className="text-[14px] font-normal text-ijp-near-black leading-tight">
+        <span className="text-[14px] font-normal text-[#231F20] leading-tight">
           {application.role}
         </span>
       </td>
 
       {/* Account */}
       <td className="px-4 py-3.5">
-        <span className="text-[14px] font-normal text-ijp-near-black leading-tight">
+        <span className="text-[14px] font-normal text-[#231F20] leading-tight">
           {application.account}
         </span>
       </td>
 
       {/* Applied Date */}
       <td className="px-4 py-3.5">
-        <span className="text-[14px] font-normal text-ijp-near-black leading-tight">
+        <span className="text-[14px] font-normal text-[#231F20] leading-tight">
           {application.appliedDate}
         </span>
       </td>
@@ -49,7 +49,7 @@ const TableRow: React.FC<TableRowProps> = ({ application, isClickable = false, o
       {/* Hiring Manager */}
       <td className="px-4 py-3.5">
         <div className="flex items-center gap-1.5">
-          <span className="text-[14px] font-normal text-ijp-near-black leading-tight">
+          <span className="text-[14px] font-normal text-[#231F20] leading-tight">
             {application.hiringManager}
           </span>
           {application.hasManagerInfo && (

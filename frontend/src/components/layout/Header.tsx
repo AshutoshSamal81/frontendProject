@@ -32,8 +32,8 @@ const Header: React.FC = () => {
               <button
                 className={`px-1 pb-3.5 pt-3.5 text-[15px] leading-tight transition-colors ${
                   item.active
-                    ? 'font-medium text-ijp-dark-blue'
-                    : 'font-normal text-ijp-gray'
+                    ? 'font-medium text-[#231F20]'
+                    : 'font-normal text-[#7A7480]'
                 }`}
               >
                 {item.label}
