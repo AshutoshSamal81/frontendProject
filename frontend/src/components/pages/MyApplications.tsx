@@ -1,12 +1,12 @@
 import React from 'react';
-import FilterPanel from '../filters/FilterPanel';
-// import ContentSection from '../layout/ContentSection';
+import FilterPanel from '../filters/FilterPanel';;
 import SearchBar from '../common/SearchBar';
 import ApplicationTable from '../table/ApplicationTable';
+import Layout from '../layout/Layout';
 
 const MyApplications: React.FC = () => {
   return (
-    <>
+    <Layout>
       {/* Page Header: Title (left) and Search (right) */}
       <div className="mb-5 flex items-center justify-between">
         <h1 className="text-[18px] font-medium text-[#231F20] leading-tight">
@@ -26,7 +26,7 @@ const MyApplications: React.FC = () => {
             <ApplicationTable />
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 

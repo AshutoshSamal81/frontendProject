@@ -20,9 +20,9 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
       />
 
       {/* Side Panel */}
-      <div className="fixed right-0 top-0 bottom-0 w-[580px] bg-white shadow-2xl z-50 overflow-y-auto">
+      <div className="fixed right-0 top-0 bottom-0 w-[750px] bg-white shadow-2xl z-50 overflow-y-auto rounded-l-2xl">
         {/* Header */}
-        <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between">
+        <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between rounded-tl-2xl">
           <h2 className="text-[18px] font-medium text-ijp-near-black leading-tight">
             Application details
           </h2>
@@ -57,17 +57,17 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
                 </p>
               </div>
               <div>
-                <label className="block text-[12px] font-medium text-ijp-gray mb-1 leading-tight">
-                  Hiring Manager
-                </label>
-                <div className="flex items-center gap-2">
-                  <p className="text-[14px] font-normal text-ijp-near-black leading-tight">
-                    Andreas Stephen
-                  </p>
+                <div className="flex items-center gap-2 mb-1">
+                  <label className="text-[12px] font-medium text-ijp-gray leading-tight">
+                    Hiring Manager
+                  </label>
                   <span className="inline-flex items-center rounded-full bg-[#E0F5F9] px-2 py-0.5 text-[11px] font-medium text-[#0097AC] leading-tight">
                     External request
                   </span>
                 </div>
+                <p className="text-[14px] font-normal text-ijp-near-black leading-tight">
+                  Andreas Stephen
+                </p>
               </div>
             </div>
 
@@ -108,7 +108,7 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
                 {['Java', 'Selenium', 'C++', 'Python'].map((skill) => (
                   <span
                     key={skill}
-                    className="inline-flex items-center rounded-full bg-[#ECEEE8] px-3 py-1.5 text-[13px] font-normal text-ijp-near-black leading-tight"
+                    className="inline-flex items-center rounded-md bg-[#ECEEE8] px-3 py-1.5 text-[13px] font-normal text-ijp-near-black leading-tight"
                   >
                     {skill}
                   </span>
@@ -119,14 +119,14 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
 
           {/* Application Progress */}
           <div>
-            <h3 className="text-[15px] font-medium text-[#231F20] mb-4 leading-tight">
+            <h3 className="text-[15px] font-medium text-ijp-near-black mb-4 leading-tight">
               Application Progress
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-0">
               {/* Timeline Item 1 - Completed */}
               <div className="flex gap-3">
                 <div className="flex flex-col items-center">
-                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#01B27C]">
+                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#01B27C] flex-shrink-0">
                     <svg
                       width="12"
                       height="10"
@@ -143,16 +143,16 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
                       />
                     </svg>
                   </div>
-                  <div className="w-0.5 h-full bg-gray-200 mt-1" />
+                  <div className="w-px flex-1 bg-[#E5E7EB]" />
                 </div>
-                <div className="flex-1 pb-4">
-                  <p className="text-[14px] font-medium text-[#231F20] leading-tight">
+                <div className="flex-1 pb-6">
+                  <p className="text-[14px] font-medium text-ijp-near-black leading-tight">
                     Application pending
                   </p>
-                  <p className="text-[12px] text-[#747A80] mt-0.5 leading-tight">
+                  <p className="text-[12px] text-ijp-gray mt-0.5 leading-tight">
                     Pending approval from WFM
                   </p>
-                  <p className="text-[11px] text-[#747A80] mt-0.5 leading-tight">
+                  <p className="text-[11px] text-ijp-gray mt-0.5 leading-tight">
                     4th December, 2024
                   </p>
                 </div>
@@ -161,7 +161,7 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
               {/* Timeline Item 2 - Completed */}
               <div className="flex gap-3">
                 <div className="flex flex-col items-center">
-                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#01B27C]">
+                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#01B27C] flex-shrink-0">
                     <svg
                       width="12"
                       height="10"
@@ -178,16 +178,16 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
                       />
                     </svg>
                   </div>
-                  <div className="w-0.5 h-full bg-gray-200 mt-1" />
+                  <div className="w-px flex-1 bg-[#E5E7EB]" />
                 </div>
-                <div className="flex-1 pb-4">
-                  <p className="text-[14px] font-medium text-[#231F20] leading-tight">
+                <div className="flex-1 pb-6">
+                  <p className="text-[14px] font-medium text-ijp-near-black leading-tight">
                     Application approved
                   </p>
-                  <p className="text-[12px] text-[#747A80] mt-0.5 leading-tight">
+                  <p className="text-[12px] text-ijp-gray mt-0.5 leading-tight">
                     Application has been approved by WFM
                   </p>
-                  <p className="text-[11px] text-[#747A80] mt-0.5 leading-tight">
+                  <p className="text-[11px] text-ijp-gray mt-0.5 leading-tight">
                     4th December, 2024
                   </p>
                 </div>
@@ -196,7 +196,7 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
               {/* Timeline Item 3 - Completed */}
               <div className="flex gap-3">
                 <div className="flex flex-col items-center">
-                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#01B27C]">
+                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#01B27C] flex-shrink-0">
                     <svg
                       width="12"
                       height="10"
@@ -213,16 +213,16 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
                       />
                     </svg>
                   </div>
-                  <div className="w-0.5 h-full bg-gray-200 mt-1" />
+                  <div className="w-px flex-1 bg-[#E5E7EB]" />
                 </div>
-                <div className="flex-1 pb-4">
-                  <p className="text-[14px] font-medium text-[#231F20] leading-tight">
+                <div className="flex-1 pb-6">
+                  <p className="text-[14px] font-medium text-ijp-near-black leading-tight">
                     Selected for interview
                   </p>
-                  <p className="text-[12px] text-[#747A80] mt-0.5 leading-tight">
+                  <p className="text-[12px] text-ijp-gray mt-0.5 leading-tight">
                     Applicant pushed to interview stage
                   </p>
-                  <p className="text-[11px] text-[#747A80] mt-0.5 leading-tight">
+                  <p className="text-[11px] text-ijp-gray mt-0.5 leading-tight">
                     4th December, 2024
                   </p>
                 </div>
@@ -231,7 +231,7 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
               {/* Timeline Item 4 - Failed */}
               <div className="flex gap-3">
                 <div className="flex flex-col items-center">
-                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#FC6A59]">
+                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#FC6A59] flex-shrink-0">
                     <svg
                       width="10"
                       height="10"
@@ -247,16 +247,16 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
                       />
                     </svg>
                   </div>
-                  <div className="w-0.5 h-full bg-gray-200 mt-1" />
+                  <div className="w-px flex-1 bg-[#E5E7EB]" />
                 </div>
-                <div className="flex-1 pb-4">
-                  <p className="text-[14px] font-medium text-[#231F20] leading-tight">
+                <div className="flex-1 pb-6">
+                  <p className="text-[14px] font-medium text-ijp-near-black leading-tight">
                     Selected for opportunity
                   </p>
-                  <p className="text-[12px] text-[#747A80] mt-0.5 leading-tight">
+                  <p className="text-[12px] text-ijp-gray mt-0.5 leading-tight">
                     Failed to qualify interview
                   </p>
-                  <p className="text-[11px] text-[#747A80] mt-0.5 leading-tight">
+                  <p className="text-[11px] text-ijp-gray mt-0.5 leading-tight">
                     4th December, 2024
                   </p>
                 </div>
@@ -265,7 +265,7 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
               {/* Timeline Item 5 - Incomplete */}
               <div className="flex gap-3">
                 <div className="flex flex-col items-center">
-                  <div className="flex h-5 w-5 items-center justify-center rounded-full border-2 border-gray-300 bg-white" />
+                  <div className="flex h-6 w-6 items-center justify-center rounded-full border-2 border-[#D1D5DB] bg-white flex-shrink-0" />
                 </div>
                 <div className="flex-1">
                   <p className="text-[14px] font-normal text-ijp-gray leading-tight">
@@ -276,18 +276,18 @@ const ApplicationDetailsPanel: React.FC<ApplicationDetailsPanelProps> = ({
             </div>
           </div>
 
-            {/* Reason for Rejection - WITH BACKGROUND */}
-            <div className="rounded-lg bg-red-50 p-4 border border-red-100">
-                <h3 className="text-[15px] font-medium text-[#231F20] mb-3 leading-tight">
-                    Reason for Rejection
-                </h3>
-                <p className="text-[13px] text-[#231F20] leading-relaxed">
-                    While your portfolio demonstrated strong design skills, we were looking for more experience with
-                    enterprise-level design systems and accessibility standards. We found a candidate with more relevant
-                    experience in these specific areas. We encourage you to apply for future UX positions as your skills
-                    continue to develop.
-                </p>
-            </div>
+          {/* Reason for Rejection - WITH BACKGROUND */}
+          <div className="rounded-lg bg-red-50 p-4 border border-red-100">
+              <h3 className="text-[15px] font-medium text-[#231F20] mb-3 leading-tight">
+                  Reason for Rejection
+              </h3>
+              <p className="text-[13px] text-[#231F20] leading-relaxed">
+                  While your portfolio demonstrated strong design skills, we were looking for more experience with
+                  enterprise-level design systems and accessibility standards. We found a candidate with more relevant
+                  experience in these specific areas. We encourage you to apply for future UX positions as your skills
+                  continue to develop.
+              </p>
+          </div>
         </div>
       </div>
     </>
